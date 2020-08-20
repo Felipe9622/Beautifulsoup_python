@@ -12,5 +12,7 @@ section{
     border-radius:15px;
     width: 500px;
     margin: auto;
-    
+}
+div{
+    text-align: center;
 }
