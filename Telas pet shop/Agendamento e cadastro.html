@@ -1,0 +1,67 @@
+<html>
+<head>
+<title>cadastro animal</title>
+<link rel="stylesheet" href="Agendamento e cadastro.css">
+<script>
+    function funcao1()
+    {
+        alert("dados salvos com sucesso");
+    }
+</script>
+</head>
+<body background="img/dog.jpg">
+    <h1><p align="center">AGENDAMENTO</h1>
+    <h3>Dados do usuário</h3>
+    <p>
+        Nome do responsavel:<input type="text" name="nome" size="15">
+    </p>
+    <p>
+        E-mail:<input type="text" name="e-mail" size="15">
+    </p>
+    <p>
+        Endereço:<input type="text" name ="endereço" size="15">
+    </p>
+
+    <p align="center">
+        <h3>Dados do pet</h3>
+    </p>
+
+    <p>
+        Espécie:
+    </p>
+    <input type="radio" name="estado" value="Cachorro"/>Cachorro</br>
+    <input type="radio" name="estado" value="Gato"/>Gato</br>
+    <input type="radio" name="estado" value="Outros"/>Outros</br>
+    <p>outros:<input type="text" name="e-mail" size="10"></p></br>
+    <p>Nome:<input type="text" name="nome" size="15"></p>
+    <p>Sexo:</p>
+    <input type="radio" name="sexo" value="Macho"/>Macho</br>
+    <input type="radio" name="sexo" value="Femea"/>Femea
+    </br>
+
+    <h3><p>Tipo de consulta</p></h3>
+
+    <input type="radio" name="genero" value="Tosa"/>Tosa</br>
+    <input type="radio" name="genero" value="Consulta veterinaria"/>Consulta veterinaria
+
+    <h3><p>Data disponiveis</p></h3>
+
+    <input type="radio" name="data" value="Segunda"/>Segunda</br>
+    <input type="radio" name="data" value="Terça"/>Terça</br>
+    <input type="radio" name="data" value="Quarta"/>Quarta</br>
+    <input type="radio" name="data" value="Quinta"/>Quinta</br>
+    <input type="radio" name="data" value="Sexta"/>Sexta</br>
+
+    <h3><p>Horário disponiveis</p></h3>
+
+    <input type="radio" name="hora" value="8:00"/>8:00
+    <input type="radio" name="hora" value="9:00"/>9:00
+    <input type="radio" name="hora" value="8:00"/>10:30
+    <input type="radio" name="hora" value="8:00"/>13:45
+    <input type="radio" name="hora" value="8:00"/>14:30
+    <input type="radio" name="hora" value="8:00"/>16:30
+
+    <p align="center"><a href="Tela finalização.html" ><input type="submit" onclick="funcao1()" value="OK"/></a></p>
+    <p align="center"><a href="Tela login.html" ><input type="reset" value="Voltar"/></a></p>
+</body>
+</html>
