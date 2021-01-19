@@ -12,19 +12,13 @@ html = urlopen(url)
 # Enfim mostrando o poder da bs4
 bs = BeautifulSoup(html.read(), 'html.parser')
 
-
-
-
-
 produto = bs.find('div' , {'class' : 'sg-col-inner'})
 #imprime titulo da pagina 
-teste = print(bs.find_all('span', {'class': 'a-size-base-plus a-color-base a-text-normal'}))
-# a [] funciona como uma bussola para qual dado do relogio especifico deseja, caso retire ele vai pegar o nome de todos os relocios na pagina 
+teste = bs.find_all('span', {'class': 'a-size-base-plus a-color-base a-text-normal'})
+# a [] funciona como uma bussola para qual dado do relogio especifico deseja, caso retire ele vai pegar o nome de todos os relogerios na pagina 
 
-for teste in bs:
-    fim = teste.extract()
-    print(fim)
-    
+for item in teste:
+    print(item.text)
 
 
 
