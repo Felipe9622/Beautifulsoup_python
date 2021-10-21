@@ -10,7 +10,7 @@ headers = {'User-Agent':'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:72.0) Gecko/
 # lendo a URL com a urllopenr
 html = requests.get(url=url, headers=headers)
 
-# Enfim mostrando o poder da bs4
+
 bs = BeautifulSoup(html.text, 'html.parser')
 
 produto = bs.find('div' , {'class' : 'sg-col-inner'})
